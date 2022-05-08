@@ -145,7 +145,7 @@ contract Carbon {
         SwapOrder memory order = swapOrders[index];
         companySeasonCarbon[order.from].locked = 0;
         companySeasonCarbon[order.from].used  = companySeasonCarbon[order.from].used + order.amount;
-        companySeasonCarbon[msg.sender].buyed = order.amount;
+        companySeasonCarbon[msg.sender].buyed = companySeasonCarbon[msg.sender].buyed + order.amount;
         emit OrderBuy(index, msg.sender, order.from, order.amount);
     }
 }
