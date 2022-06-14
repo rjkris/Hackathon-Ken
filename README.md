@@ -25,3 +25,18 @@ makeOrder(uint amount)
 cancelOrder(uint index)
 buyCarbon(uint index)
 ```
+
+## Getting Started 
+```bash
+# Install project's dependencies
+yarn install
+
+# Start Hardhat Network
+yarn chain
+
+# Deploy contract
+yarn deploy
+
+# Start Server
+yarn dev
+```

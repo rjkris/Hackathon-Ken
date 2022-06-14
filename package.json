@@ -1,0 +1,31 @@
+{
+  "name": "nextjs-ethereum-starter",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "yarn workspace nextjs-ethereum-starter-frontend dev",
+    "build": "yarn workspace nextjs-ethereum-starter-frontend build",
+    "start": "yarn workspace nextjs-ethereum-starter-frontend start",
+    "chain": "yarn workspace nextjs-ethereum-starter-hardhat chain",
+    "deploy": "yarn workspace nextjs-ethereum-starter-hardhat deploy",
+    "compile": "yarn workspace nextjs-ethereum-starter-hardhat compile"
+  },
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+      "**/hardhat",
+      "**/hardhat/**"
+    ]
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "babel-plugin-inline-react-svg": "^2.0.1"
+  },
+  "dependencies": {
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
